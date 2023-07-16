@@ -13,7 +13,6 @@ const App = () => {
         name: contentName,
       },
     ]);
-    console.log(content);
     setContentName("");
   };
 
