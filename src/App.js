@@ -13,6 +13,7 @@ const App = () => {
         name: contentName,
       },
     ]);
+    console.log(content);
     setContentName("");
   };
 
@@ -22,6 +23,7 @@ const App = () => {
         <label>
           Enter Text
           <input
+            name="item"
             type="text"
             value={contentName}
             onChange={(e) => setContentName(e.target.value)}
@@ -29,8 +31,8 @@ const App = () => {
         </label>
       </form>
       <ul>
-        {content.map((item) => (
-          <li key={item.id}>{item.name}</li>
+        {content.map((item, index) => (
+          <li key={index}>{item.name}</li>
         ))}
       </ul>
     </>
