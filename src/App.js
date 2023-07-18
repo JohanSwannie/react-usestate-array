@@ -32,7 +32,7 @@ const App = () => {
       <ul>
         {content.map((item) => (
           <li key={item.id}>
-            Text: {item.name} --- ID: {item.id}
+            Text ID: {item.id} Text: {item.name}
           </li>
         ))}
       </ul>
