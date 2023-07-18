@@ -30,8 +30,10 @@ const App = () => {
         </label>
       </form>
       <ul>
-        {content.map((item, index) => (
-          <li key={index}>{item.name}</li>
+        {content.map((item) => (
+          <li key={item.id}>
+            Text: {item.name} --- ID: {item.id}
+          </li>
         ))}
       </ul>
     </>
